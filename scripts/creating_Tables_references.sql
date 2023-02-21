@@ -19,3 +19,10 @@ CREATE TABLE INSCRICAO (
 	PRIMARY KEY (idcliente, idcurso),
 	FOREIGN KEY (idcurso) REFERENCES CURSO (idcurso),
 	FOREIGN KEY (idcliente) REFERENCES CLIENTE (idcliente));
+
+insert into CLIENTE 
+values (1, 'Ruan Afonso', '1996-07-31', 'ruan_email@email.com', '(21)91234-4321');
+insert into CURSO 
+values (1, 'SQL', 20, 'Curso de SQL básico');
+insert into INSCRICAO 
+values (1, 1, '2023-02-21');
